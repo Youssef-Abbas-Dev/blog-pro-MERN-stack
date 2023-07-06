@@ -24,12 +24,14 @@ APP_EMAIL_PASSWORD= your email service password
 CLIENT_DOMAIN= http://localhost:3000 
 ```
 
-### Install Dependencies (frontend & backend)
-
+### Install Dependencies
+**backend**
 ```
 cd backend
 npm install
-
+```
+**frontend**
+```
 cd frontend
 npm install
 ```
