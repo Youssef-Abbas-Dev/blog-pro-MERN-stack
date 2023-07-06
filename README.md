@@ -37,7 +37,7 @@ npm install
 ### Run
 
 ```
-_Run the backend_
+**Run the backen**
 cd backend
 npm run dev
 
