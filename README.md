@@ -8,9 +8,7 @@ This repository is the client side and the server side of Blog Project built wit
 - Create `images` folder in the backend
 
 ### Environment Variables
-
 Create `.env` file in the backend folder and add the following
-
 ```
 PORT= 5000
 MONGO_URI= your mongodb uri
@@ -24,6 +22,7 @@ APP_EMAIL_PASSWORD= your email service password
 CLIENT_DOMAIN= http://localhost:3000 
 ```
 
+
 ### Install Dependencies
 **backend**
 ```
@@ -36,8 +35,8 @@ cd frontend
 npm install
 ```
 
-### Run
 
+### Run
 **Run the backend**
 ```
 cd backend
