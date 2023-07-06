@@ -1,0 +1,123 @@
+.post-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex: 9;
+}
+
+.post-item {
+    width: 100%;
+    background-color: rgb(244, 244, 244);
+    margin-bottom: 40px;
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    border: 1px solid rgb(183, 179, 179);
+}
+
+.post-item-image-wrapper {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.post-item-image {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.post-item-info-wrapper {
+    width: 100%;
+}
+
+.post-item-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px;
+    border-bottom: 1px solid var(--gray-color);
+    padding-bottom: 5px;
+}
+
+.post-item-author strong {
+    color: var(--green-sea-color);
+    font-size: 18px;
+}
+
+.post-item-author .post-item-username {
+    font-size: 17px;
+    font-weight: 500;
+    color: var(--primary-color);
+    text-transform: capitalize;
+}
+
+.post-item-date {
+    font-weight: bold;
+    font-size: 14px;
+    color: var(--green-sea-color);
+}
+
+.post-item-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+}
+
+.post-item-title {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.post-item-category {
+    background-color: var(--pumpkin-color);
+    color: var(--white-color);
+    padding: 2px 7px;
+    border-radius: 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.post-item-description {
+    font-size: 17px;
+    line-height: 1.9;
+    color: var(--secondary-color);
+    font-weight: 500;
+    padding: 5px;
+    margin: 10px 0;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.post-item-link {
+    background-color: var(--green-color);
+    color: var(--white-color);
+    width: 100%;
+    display: block;
+    text-align: center;
+    font-size: 21px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 720px) {
+    .post-item {
+        padding: 10px;
+    }
+
+    .post-item-image {
+        object-fit: cover;
+    }
+}

@@ -1,0 +1,131 @@
+.table-container {
+    display: flex;
+    height: calc(100vh - 130px);
+    overflow: hidden;
+}
+
+.table-wrapper {
+    flex: 10;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.table-title {
+    font-size: 30px;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--secondary-color);
+    padding-bottom: 3px;
+    width: max-content;
+}
+
+.table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid var(--gray-color);
+    padding: 10px;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--white-color);
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+.table-image {
+    display: flex;
+    align-items: center;
+}
+
+.table-user-image {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.table-username {
+    font-weight: 500;
+    font-size: 17px;
+    margin-left: 5px;
+}
+
+.table-button-group {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.table-button-group button {
+    border: none;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.table-button-group button:last-child {
+    background-color: var(--red-color);
+}
+
+.table-button-group button:first-child:hover {
+    background-color: green;
+}
+
+.table-button-group button:last-child:hover {
+    background-color: red;
+}
+
+.table-button-group button a {
+    color: var(--white-color);
+}
+
+/* Media Queries */
+@media (max-width: 720px) {
+    .table-wrapper {
+        padding: 15px;
+    }
+
+    .table-button-group {
+        flex-wrap: wrap;
+    }
+
+    .table-button-group button {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    th, td {
+        padding: 5px;
+    }
+
+    .table-image {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 520px) {
+    .table-wrapper {
+        padding: 5px;
+    }
+    
+    th, td {
+        padding: 2px;
+    }
+}

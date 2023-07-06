@@ -1,0 +1,141 @@
+.profile {
+    padding: 30px;
+}
+
+.profile-loader {
+    min-height: calc(100vh - 130px);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.profile-header {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--primary-color);
+}
+
+.profile-image-wrapper {
+    width: 120px;
+    height: 120px;
+    position: relative;
+    text-align: center;
+}
+
+.profile-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.upload-profile-photo-icon,
+.upload-profile-photo-btn {
+    color: var(--primary-color);
+    background-color: #eee;
+    border: 1px solid var(--primary-color);
+    border-radius: 50%;
+    padding: 0 5px;
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    margin: auto;
+    width: max-content;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 25px;
+}
+
+.upload-profile-photo-btn {
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    color: var(--dark-color);
+    right: -65px;
+}
+
+.profile-username {
+    font-size: 30px;
+    color: var(--white-color);
+    margin: 10px 0;
+}
+
+.profile-bio {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--main-color);
+    margin: 10px 0;
+}
+
+.user-date-joined strong {
+    color: var(--gray-color);
+    font-size: 17px;
+}
+
+.user-date-joined span {
+    color: var(--green-sea-color);
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.profile-update-btn {
+    font-size: 21px;
+    font-weight: 500;
+    background-color: var(--green-color);
+    color: var(--white-color);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.profile-posts-list {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.profile-posts-list-title {
+    margin-bottom: 20px;
+    padding: 5px 0;
+    font-size: 40px;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+}
+
+.delete-account-btn {
+    background-color: var(--white-color);
+    color: var(--red-color);
+    padding: 5px;
+    border: 1px solid var(--red-color);
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* Media Queries */
+@media (max-width: 990px) {
+    .profile-posts-list {
+        width: 100%;
+    }
+}
+
+@media (max-width: 520px) {
+    .profile {
+        padding: 15px;
+    }
+
+    .profile-header {
+        padding: 10px;
+    }
+
+    .profile-bio {
+        text-align: center;
+    }
+}
