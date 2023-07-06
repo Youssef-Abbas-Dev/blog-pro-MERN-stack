@@ -10,7 +10,7 @@ This repository is the client side and the server side of Blog Project built wit
 ## Environment Variables
 Create `.env` file in the backend folder and add the following
 ```
-PORT= 5000
+PORT= 8000
 MONGO_URI= your mongodb uri
 NODE_ENV= development
 JWT_SECRET= your jwt secret key
