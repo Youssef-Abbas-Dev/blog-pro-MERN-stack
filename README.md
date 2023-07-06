@@ -36,12 +36,14 @@ npm install
 
 ### Run
 
+**Run the backend**
 ```
-**Run the backen**
 cd backend
 npm run dev
+```
 
-_Run the frontend_
+**Run the frontend**
+```
 cd frontend
 npm start
 ```
